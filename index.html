@@ -10,9 +10,20 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous" />
         <link rel="icon" href="images/FF logo.svg" type="image/x-icon" />
+        <style>
+            body, html {
+                height: 100%;
+            }
+            .bg {
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-xxl text-bg-dark navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-xl text-bg-dark navbar-dark fixed-top">
             <div class="container-md container-fluid">
                 <a class="navbar-brand" href="/">
                     <img src="images/FF logo.svg" alt="Bootstrap" width="40" />
@@ -43,16 +54,6 @@
                             <a class="nav-link text-secondary" href="#">Resources</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#">Drive</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#">Contact
-                                Us</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-secondary" href="#">Contribute</a>
                         </li>
                     </ul>
@@ -62,31 +63,33 @@
                             type="search"
                             placeholder="Search"
                             aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">
+                        <button class="btn btn-success" type="submit">
                             Search
                         </button>
                     </form>
                 </div>
             </div>
         </nav>
-        <div class="container-md container-fluid mt-5 pt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="display-1">Fundamental Fluency</h1>
-                    <p class="lead">
-                        A student body in Anderson Serangoon Junior College
-                        aiming to spark interest in the wonderful world of
-                        physics.
-                        We prepare students for physics competitions (SPhO,
-                        SPhL, SYPT) and university level physics
-                    </p>
-                    <p class="lead justify-content-end">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn
-                            more</a>
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/FF logo.svg" alt="Bootstrap" width="500" />
+        <div class="bg" style="background-image: url('/images/bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="container-sm container-fluid mt-5 pt-5">
+                <div class="row">
+                    <div class="col-md-6 bg-dark-subtle bg-gradient rounded-5">
+                        <h1 class="display-1">Advanced <br>Physics</h1>
+                        <p class="lead">
+                            A student body in Anderson Serangoon Junior College
+                            aiming to spark interest in the wonderful world of
+                            physics.<br>
+                            We prepare students for physics competitions (SPhO,
+                            SPhL, SYPT) and university level physics
+                        </p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn
+                                more</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 d-md-none d-lg-block d-sm-none d-none">
+                        <img src="images/FF logo.svg" width="400" />
+                    </div>
                 </div>
             </div>
         </div>
