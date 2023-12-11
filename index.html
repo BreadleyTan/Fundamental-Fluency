@@ -11,21 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="icon" href="images/FF logo.svg" type="image/x-icon" />
-    <style>
-      body,
-      html {
-        height: 100%;
-      }
-      .bg {
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      ul.nav a:hover {
-        color: #fff !important;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-xl text-bg-dark navbar-dark fixed-top">
@@ -49,22 +35,29 @@
           class="collapse navbar-collapse justify-content-between"
           id="navbarSupportedContent"
         >
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
+          <ul class="nav justify-content-end nav-underline">
+            <li class="nav-item ms-2">
               <a class="nav-link text-primary" aria-current="page" href="#"
                 >Home</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item ms-2">
               <a class="nav-link text-secondary" href="#">Upcoming</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">Resources</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" role="button">Resources</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ms-2">
               <a class="nav-link text-secondary" href="#">Contribute</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ms-2">
               <a class="nav-link text-secondary" href="#">Credits</a>
             </li>
           </ul>
@@ -80,41 +73,117 @@
         </div>
       </div>
     </nav>
-    <div
-      class="bg"
-      style="
-        background-image: url('/images/bg.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      "
-    >
-      <div class="container-sm container-fluid mt-5 pt-5">
+    <div>
+      <div class="bg-img"></div>
+      <div class="container-sm container-fluid mt-5 pt-5 mb-5 pb-5">
         <div class="row">
-          <div class="col-md-6 bg-dark-subtle bg-gradient rounded-5">
+          <div class="col-md-6 bg-white-subtle gradient-thing rounded-5">
             <h1 class="display-1">Advanced <br />Physics</h1>
             <p class="lead">
-              Welcome to our Physics Hub at Anderson Serangoon Junior College!
-              🚀 <br /><br />
+              Welcome to our Physics Hub at ASRJC!
+              <br /><br />
               We're a passionate student initiative dedicated to making the
               complexities of university-level physics accessible to everyone.
-              <br /><br />Dive into the captivating world of physics with our
-              extensive collection of free resources, engaging lectures, and
-              meticulously worked-through problems.<br /><br />
+              <br /><br />Dive into physics with our extensive collection of
+              free resources, engaging lectures, and meticulously worked-through
+              problems.<br /><br />
               Whether you're gearing up for physics competitions like SPhO,
               SPhL, SYPT, or simply looking to strengthen your understanding of
               physics concepts, our materials are tailored to suit your needs.
               Join us on this exciting journey of discovery and
               <b><em>register</em></b> for our next lecture today!
+          </div>
+          <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+            <img  src="images/FF logo.svg" loading="lazy" alt="Logo" />
+          </div>
+        </div>
+      </div>
+      <div class="container-sm container-fluid mt-10 pt-5 pt-5">
+        <div class="row">
+          <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+            <img class = 'rounded-5'src="images/ASR logo.png" loading="lazy" alt="ASR logo" />
+          </div>
+          <div class="col-md-6 bg-white-subtle gradient-thing rounded-5">
+            <h1 class="display-1 ms-2 mt-2">Topics covered</h1>
+            <p class="lead">
+              <ol>
+                <li>
+                  Approximation using Binomial Expansion
+                </li>
+                <li>
+                  Binomial series
+                </li>
+                <li>
+                  Taylor Series
+                </li>
+                <li>
+                  Ordinary Differential Equations 
+                </li>
+                <li>
+                  Integration/Differentiation with vectors
+                </li>
+                <li>
+                  Differentiation with vectors
+                </li>
+                <li>
+                  Rotational Motion
+                </li>
+                <li>
+                  Gravitation
+                </li>
+                <li>
+                  Work-Energy Theorem
+                </li>
+                <li>
+                  Dynamics of Rotational Motion
+                </li>
+                <li>
+                  Electromagnetism
+                </li>
+              </ol>
             </p>
             <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button"
-                >Learn more</a
+              <a class="btn btn-primary btn-lg m-3" href="#" role="button"
+                >Request Topic</a
               >
+              <a class="btn btn-primary btn-lg m-3" href="#" role="button"
+                >Clarify Misconceptions
+              </a>
             </p>
           </div>
-          <div class="col-md-6 d-md-none d-lg-block d-sm-none d-none">
-            <img src="images/FF logo.svg" width="400" />
+        </div>
+      </div>
+      <div class="container-sm container-fluid mt-5 pt-5 mb-5 pb-5">
+        <div class="row pt-5" id="resources">
+          <div class="col-md-6 bg-white-subtle gradient-thing rounded-5">
+            <h1 class="display-1 ms-2 mt-2">Resources</h1>
+            <p class="lead">
+              <br>
+              <a class="btn btn-primary btn-lg m-3" href="https://docs.google.com/document/d/1qFEosMGrXIc-YEpzghEn-xEYazQy0qiv6LJV_i2I0GU/edit?usp=sharing" role="button" target="_blank"
+                >Our Mission</a
+              ><br>
+              <a class="btn btn-primary btn-lg m-3" href="https://drive.google.com/drive/folders/1Iorw2gZhfxWjBS_Dpvi7ooJIRWaNz9iv?usp=sharing" role="button" target="_blank"
+                >Olympiad Physics Notes</a
+              ><br>
+              <a class="btn btn-primary btn-lg m-3" href="https://drive.google.com/drive/u/1/folders/1iXQuaiRBtmK7kJViWM33BobgTQb6ekXu" role="button" target="_blank"
+                >University Physics Textbook</a
+              ><br>
+              <a class="btn btn-primary btn-lg m-3" href="https://drive.google.com/drive/u/1/folders/1syuRJXTPgUQanLMfYDiN6YNQZ3lC0HA0" role="button" target="_blank"
+                >H3 Physics Papers</a
+              ><br>
+              <a class="btn btn-primary btn-lg m-3" href="" role="button" target="_blank"
+                >H3 Summary Notes</a
+              ><br>
+              <a class="btn btn-primary btn-lg m-3" href="https://drive.google.com/drive/u/1/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL" role="button" target="_blank"
+                >IPhO Formulas</a
+              ><br>
+              <a class="btn btn-primary btn-lg m-3" href="https://drive.google.com/drive/u/1/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL" role="button" target="_blank"
+                >Google Drive</a
+              ><br>
+          </div>
+          <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row p-5">
+            <a href='https://drive.google.com/drive/u/1/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL' target ='_blank'><img  class="spin" src="images/Google_Drive_icon_(2020).svg" loading="lazy"/>
+            </a>
           </div>
         </div>
       </div>

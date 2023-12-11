@@ -1,0 +1,40 @@
+body,
+html {
+  height: 100%;
+}
+.bg-img {
+  background-image: url("/images/bg.png");
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+ul.nav a:hover {
+  color: #fff !important;
+}
+
+.gradient-thing {
+  background-color: #fff;
+}
+
+.spin {
+  animation: spin 5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
