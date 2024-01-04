@@ -24,17 +24,26 @@ ul.nav a:hover {
 }
 
 .spin {
-  animation: spin 5s ease-in-out infinite;
+  animation: spin 4s ease-in-out infinite;
 }
 
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
-  20% {
+  30% {
     transform: rotate(360deg);
   }
   100% {
     transform: rotate(360deg);
   }
+}
+
+.bg-footer {
+  background-color: #000000;
+}
+
+.temp {
+  height: 100%;
+  width: 100%;
 }
