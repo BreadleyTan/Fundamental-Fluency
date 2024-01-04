@@ -68,3 +68,8 @@ ul.nav a:hover {
   width: 45%;
   height: 50px;
 }
+
+.center{
+  display: flex;
+  justify-content: center;
+}
