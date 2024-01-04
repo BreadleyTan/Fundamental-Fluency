@@ -58,7 +58,7 @@ ul.nav a:hover {
 }
 
 .fit_it_css {
-  object-fit: cover;
+  object-fit: contain;
   width: 51%;
   height: 60%;
 }
