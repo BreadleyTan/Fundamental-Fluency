@@ -47,3 +47,12 @@ ul.nav a:hover {
   height: 100%;
   width: 100%;
 }
+
+.bradley {
+  font-size: 72px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  background: -webkit-linear-gradient(rgb(244, 150, 0), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
