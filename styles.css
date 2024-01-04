@@ -56,3 +56,15 @@ ul.nav a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.fit_it_css {
+  object-fit: cover;
+  width: 51%;
+  height: 60%;
+}
+
+.button_size {
+  object-fit: cover;
+  width: 45%;
+  height: 50px;
+}
