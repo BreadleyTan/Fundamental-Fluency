@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
 }
-.bg-img {
+.bg-img1 {
   background-image: url("images/bigbg.png");
   height: 100%;
   z-index: -1;
@@ -14,15 +14,40 @@ html {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  animation: scroll 20s linear infinite;
+  animation: scroll1 20s linear infinite;
 }
 
-@keyframes scroll {
+@keyframes scroll1 {
   0% {
-    background-position: 0% 0%;
+    transform: translateX(0%);
   }
   100% {
-    background-position: 100% 0%;
+    transform: translateX(-100%);
+  }
+}
+
+.bg-img2 {
+  background-image: url("images/bigbg.png");
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  translate: translateX(100%);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  animation: scroll2 20s linear infinite;
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
