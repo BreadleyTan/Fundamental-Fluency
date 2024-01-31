@@ -1,511 +1,702 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="images/FF logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Events</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="icon" href="images/FF logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <nav class="navbar navbar-expand-xl text-bg-dark navbar-dark fixed-top">
+      <div class="container-md container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="images/FF logo.svg" alt="Bootstrap" width="40" />
+        </a>
+        <a class="navbar-brand" href="index.html">Fundamental Fluency</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="nav justify-content-end nav-underline">
+            <li class="nav-item ms-2">
+              <a
+                class="nav-link text-primary"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
 
-<body>
-  <nav class="navbar navbar-expand-xl text-bg-dark navbar-dark fixed-top">
-    <div class="container-md container-fluid">
-      <a class="navbar-brand" href="/">
-        <img src="images/FF logo.svg" alt="Bootstrap" width="40" />
-      </a>
-      <a class="navbar-brand" href="index.html">Fundamental Fluency</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-        <ul class="nav justify-content-end nav-underline">
-          <li class="nav-item ms-2">
-            <a class="nav-link text-primary" aria-current="page" href="index.html">Home</a>
-          </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-bs-toggle="dropdown"
+                role="button"
+                >Upcoming</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="lecture.html">Lectures</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="event_competition.html"
+                    >Competitions & Events</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-bs-toggle="dropdown"
+                role="button"
+                >Resources</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://drive.google.com/drive/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL?usp=sharing"
+                    >Google Drive</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://drive.google.com/file/d/1S0Cfz8b-qcuChJPbXM8A7lks3gbQ0b3E/view?usp=sharing"
+                    >University Textbook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://drive.google.com/file/d/1gtQrrtVuHSeBBLLqwffzDevAvfwn7jAf/view?usp=sharing"
+                    >SPhO Formulas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="articles.html">Articles</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="problems.html">Problems</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="index.html#Comprehensive_Resources"
+                    >Full list<br />
+                    of Resources</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="FAQ.html">FAQ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link text-secondary" href="contact_us.html"
+                >Contribute</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link text-secondary" href="credit.html">Credits</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="p-2">
+      <div class="bg-img1"></div>
+      <div class="bg-img2"></div>
+      <div class="container-sm container-fluid mt-5 pt-5 mb-5 pb-5">
+        <div
+          class="bg-white-subtle gradient-thing rounded-5 center border border-dark"
+        >
+          <div>
+            <h1 class="display-1">Competitions & Events<br /></h1>
+          </div>
+        </div>
+        <div class="center pt-3">
+          <table
+            class="table table-hover table-sm border border-dark fit_it_css"
+          >
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Event</th>
+                <th scope="col">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" role="button">Upcoming</a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li>
-                <a class="dropdown-item" href="lecture.html">Lectures</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="event_competition.html">Competitions & Events</a>
-              </li>
-            </ul>
+                <td>
+                  <a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#SPhO"
+                  >
+                    Singapore Physics Olympiad</a
+                  >
+                </td>
+
+                <td>Competition</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>
+                  <a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#SPhL"
+                  >
+                    Singapore Physics League
+                  </a>
+                </td>
+
+                <td>Competition</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>
+                  <a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#QCamp"
+                    >QCamp</a
+                  >
+                </td>
+                <td>Event</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>
+                  <a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#Physics Engagement Camp"
+                    >Physics Engagement Camp</a
+                  >
+                </td>
+                <td>Event</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>
+                  <a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#Astrochallenge"
+                    >Astrochallenge</a
+                  >
+                </td>
+                <td>Competition</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>
+                  <a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#YDSP"
+                    >YDSP</a
+                  >
+                </td>
+                <td>Event</td>
+              </tr>
+
+              <tr>
+                <th scope="row">7</th>
+                <td>
+                  <a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#AlphaASR"
+                    >Alpha Scholars</a
+                  >
+                </td>
+                <td>Event</td>
+              </tr>
+
+              <tr>
+                <th scope="row">8</th>
+                <td>
+                  <a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#H3Physics"
+                    >H3 Physics</a
+                  >
+                </td>
+                <td>Additional Subject</td>
+              </tr>
+
+              <tr>
+                <th scope="row">9</th>
+                <td>
+                  <a
+                    class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="#H3NTU"
+                    >H3 NTU Semiconductor Physics & Devices</a
+                  >
+                </td>
+                <td>Additional Subject</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
+        <div class="row">
+          <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+            <img src="images/SPho.svg" />
+          </div>
+          <div
+            class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6"
+          >
+            <h2 class="display-3 text-danger center" id="SPhO">
+              Singapore Physics Olympiad [SPhO]
+            </h2>
+            <h3 class="py-3 text-danger">What is Physics Olympiad?</h3>
+            <p>
+              It is on of the most prestigious national physics competitions. A
+              score of <strong>high silver</strong> or better would receive an
+              invitation to train and compete in the International Physics
+              Olympiad, the most prestitigious physics olympiads for
+              Pre-University students
+            </p>
+            <h3 class="py-3 text-danger">When is the training?</h3>
+            <p>
+              Training would occur from Term 3 ownwards, picking from the
+              cohort's best physics students, with students being rigorously
+              taught the skills to excel at SPhO. <br /><br />A selection text
+              would then be held among these students to narrow it down to a
+              select few [~8] <br /><br />The actual SPhO test would occur on
+              November, with the best being invited back for a practical round
+            </p>
+            <h3 class="py-3 text-danger">What do we do to prepare you?</h3>
+            <p>
+              Our Physics Olympiad pre-training would lay the fundamental
+              groundwork for you to excel and solve SPhO's considerably more
+              difficult questions, by exposing you to foreign concepts and ideas
+              early on.<br /><br />
+              We would teach the basic theores, which would then be elaborated
+              and expanded upon by the official training.<br /><br />
+              Sign up for our training program!
+            </p>
+            <a
+              class="btn btn-danger btn-lg my-4 button_size"
+              href="under_construction.html"
+              target="_blank"
+              >Sign Up</a
+            >
+            <!--UPDATE WITH REGISTRATION FORM-->
+          </div>
+        </div>
+      </div>
+      <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
+        <div class="row">
+          <div
+            class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6"
+          >
+            <h2 class="display-3 text-primary center" id="SPhL">
+              Singapore Physics League [SPhL]
+            </h2>
+            <h3 class="py-3">What is Physics League?</h3>
+            <p>
+              The Singapore Physics League (SPhL) is a 4-hour online
+              competition, where teams of 3 - 5 students race to solve fun
+              physics problems. <br /><br />
+              Learning and doing physics is a team sport - gather your group of
+              fellow physics enthusiasts to participate as a team and discuss
+              interesting physics together!
+            </p>
+            <h3 class="py-3">When and Where?</h3>
+            <p>
+              SPhL 2024 will be held on July 2024 (Sat or Sun), from 9 AM to 1
+              PM. <br /><br />
+              As the competition is fully online, you and your team may be
+              physically located at any spatial coordinates of your choice!
+              <br /><br />
+              All you need is a computer and a team in order to gain access to
+              our online platform. You must log in to view problems and submit
+              answers.
+            </p>
+            <a
+              class="btn btn-primary btn-lg my-4 button_size"
+              href="https://sgphysicsleague.org/"
+              role="button"
+              target="_blank"
+              >Sign Up</a
+            >
+            <a
+              class="btn btn-primary btn-lg my-4 button_size"
+              href="https://docs.avero-tech.com/asrjc/d08c61b30ebc926ada8be07790d47f62.html"
+              target="_blank"
+              >Summary</a
+            >
+          </div>
+          <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+            <img src="images/SPhL speech icon.png" />
+          </div>
+        </div>
+      </div>
+      <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
+        <div class="row">
+          <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+            <img src="images/QCamp.jfif" class="rounded-5 border border-dark" />
+          </div>
+          <div
+            class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6"
+          >
+            <h2 class="display-3 text-primary center" id="QCamp">QCamp</h2>
+            <h3 class="py-3">What is QCamp?</h3>
+            <p>
+              QCamp is a one-week summer school for curious and inquisitive
+              minds who wish to explore and understand the physical laws that
+              govern the world’s smallest scales: quantum physics.
+              <br /><br />The scope of QCamp is to provide vivid demonstrations
+              of these laws, offer career advice, as well as to help students
+              build a technical foundation for independent exploration of this
+              world. <br /><br />QCamp is organised by the Centre for Quantum
+              Technologies (CQT) at the National University of Singapore.
+            </p>
+            <h3 class="py-3">Who is it for?</h3>
+            <p>
+              QCamp is suited for JC2 students and students from other
+              institutions of similar age who hold a strong fascination for
+              physics and natural sciences, and who wish to pursue their
+              curiosity further. QCamp promotes diversity of motivations and
+              backgrounds. <br /><br />Do you feel a sense of excitement about
+              the prospect of spending a week learning just a little more about
+              the imaginative concepts and technical details of our universe’s
+              inner workings together with like-minded students? Then QCamp is
+              the right place for you!
+            </p>
+            <h3 class="py-3">When and Where?</h3>
+            <p>
+              One week in June, at the Centre for Quantum Technologies <br />
+              National University of Singapore<br />
+              Block S15, 3 Science Drive 2<br />
+              Singapore 117543
+            </p>
+            <a
+              class="btn btn-primary btn-lg my-4 button_size"
+              href="https://qcamp.quantumlah.org/register/"
+              role="button"
+              target="_blank"
+              >Sign Up</a
+            >
+            <!--UPDATE THE LINK QCAMP-->
+            <a
+              class="btn btn-primary btn-lg my-4 button_size"
+              href="https://docs.avero-tech.com/asrjc/2fbb92495c46b76bc8070f6a1747b1ef.html"
+              target="_blank"
+              >Summary</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
+      <div class="row">
+        <div
+          class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6"
+        >
+          <h2
+            class="display-3 text-primary center"
+            id="Physics Engagement Camp"
+          >
+            Physics Engagment Camp
+          </h2>
+          <h3 class="py-3">What is Physics Engagement Camp?</h3>
+          <p>
+            Physics Engagement Camp (PEC) aims to invite students passionate
+            about physics to learn more! <br /><br />Students can participate in
+            lectures from esteemed professors, who are leaders in their field,
+            to learn more about the frontiers of physics. Lab tours and hands-on
+            activities gives the student a chance to experience science in the
+            flesh.
+          </p>
+          <h3 class="py-3">When and Where?</h3>
+          <p>
+            Typically held on December 14 & 15 from 9:30am - 6:30pm at NUS
+            <br />[2024 date and location not out yet]
+          </p>
+          <a
+            class="btn btn-primary btn-lg my-4 button_size"
+            href="under_construction.html"
+            role="button"
+            target="_blank"
+            >Sign Up</a
+          >
+          <!--UPDATE THE LINK PHYSICS ENGAGEMENT CAMP-->
+          <a
+            class="btn btn-primary btn-lg my-4 button_size"
+            href="https://docs.avero-tech.com/asrjc/cebff74d20c7b8ee56ba3716d84fa6e2.html"
+            target="_blank"
+            loading="lazy"
+            >Summary</a
+          >
+        </div>
+        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+          <img src="images/Physics Engagment Camp.png" />
+        </div>
+      </div>
+    </div>
+    <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
+      <div class="row">
+        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+          <img src="images/Astrochallenge.jfif" class="rounded-5" />
+        </div>
+        <div
+          class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6"
+        >
+          <h2 class="display-3 text-primary center" id="Astrochallenge">
+            Astrochallenge
+          </h2>
+          <h3 class="py-3">What is Astrochallenge?</h3>
+          <p>
+            AstroChallenge is an annual astronomy competition jointly organised
+            by the Astronomical Societies of National University of Singapore
+            and Nanyang Technological University. The competition is specially
+            tailored for students in Secondary Schools, Junior Colleges and
+            Polytechnics. Students will be exposed to a comprehensive array of
+            questions that range from theoretical to practical astronomy
+            <br /><br />
+            It is hosted over the span of a few days and challenges participants
+            in all aspects of astronomy: from theoretical papers to practical
+            observation techniques.
+          </p>
+          <h3 class="py-3">When and Where?</h3>
+          <p>AstroChallenge is held annually in June, in NTU</p>
+          <a
+            class="btn btn-primary btn-lg my-4 button_size"
+            href="under_construction.html"
+            role="button"
+            target="_blank"
+            >Sign Up</a
+          >
+          <!--UPDATE THE LINK ASTROCHALLENGE-->
+          <a
+            class="btn btn-primary btn-lg my-4 button_size"
+            href="https://docs.avero-tech.com/asrjc/4a33e394a6f07df7a18568816908da06.html"
+            target="_blank"
+            loading="lazy"
+            >Summary</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
+      <div class="row">
+        <div
+          class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6"
+        >
+          <h2 class="display-3 text-primary center" id="YDSP">
+            Young Defense Scientist Programme [YDSP]
+          </h2>
+          <h3 class="py-3">What is YDSP?</h3>
+          <p>
+            Explore your future in science and technology with them. Work on
+            challenging and meaningful projects or join YDSP's camps and
+            activities and embark on the adventure of a lifetime! <br /><br />
+            Gain greater insights into the exciting work they do in defending
+            Singapore. Learn from experienced mentors and shape your creativity
+            and spirit of innovation through immersive science and technology
+            experiences. <br /><br />
+            Join their
+            <a
+              href="https://www.dsta.gov.sg/join-us/student/young-defence-scientists-programme"
+              class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+              >YSDP Science & Technology Camp </a
+            >or<br />
+            Join their
+            <a
+              href="https://www.dsta.gov.sg/join-us/student/young-defence-scientists-programme"
+              class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+              >YSDP World of Science </a
+            >or<br />
+            Join their
+            <a
+              href="https://www.dsta.gov.sg/join-us/student/young-defence-scientists-programme"
+              class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+              >Research@YDSP </a
+            >or<br />
+            Join their
+            <a
+              href="https://www.dsta.gov.sg/join-us/student/young-defence-scientists-programme"
+              class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+              >YSDP Congress </a
+            >or<br />
+          </p>
+        </div>
+        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+          <img src="images/YDSP.jpg" class="rounded-5" />
+        </div>
+      </div>
+    </div>
+    <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
+      <div class="row">
+        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+          <img src="images/ASR logo.png" class="rounded-5" />
+        </div>
+        <div
+          class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6"
+        >
+          <h2 class="display-3 text-primary center" id="AlphaASR">
+            ASR Scholars/Alpha Programme
+          </h2>
+          <h3 class="py-3">What is ASR Scholars Programme?</h3>
+          <p>
+            ASR Scholars Programme is a programme exclusively for ASR students
+            who score well in their MYCT's [Mid Year Common Test] and/or EOY's
+            [End Of Year] ~84RP <br /><br />
+            ASR Scholars Programme will expose you to events and opportunities,
+            as well as mentor you to help increase your chances of a
+            <strong><em>scholarship</em></strong
+            >.
+          </p>
+          <div class="display-6 text-danger pb-3">
+            <strong>Strongly advised to sign up when offered</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
+      <div class="row">
+        <div
+          class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6"
+        >
+          <h2 class="display-3 text-primary center" id="H3Physics">
+            H3 Physics
+          </h2>
+          <h3 class="py-3">What is H3 Physics?</h3>
+          <p>
+            H3 Physics typically involves more in-depth and challenging content
+            compared to the regular H2 (Higher 2) Physics curriculum. Students
+            who pursue H3 Physics learn Year 1 University Physics. <br /><br />
+            You are expected to be able to use your H2 and H3 knowledge in
+            unseen circumstances during exams. As for the math, there's a lot of
+            algebraic manipulation and calculus. <br /><br />The content itself
+            is not a lot, each chapter is similar to a H2 chapter and 5 are
+            covered in one semester, but the complexity is much higher and
+            you'll have to spend more time to understand it, with each question
+            taking more time to solve. <br /><br />Discussion in the classroom
+            is actively encouraged and a lot of self initiative is required to
+            study the material by yourself!
+          </p>
+          <h3 class="py-3">Why take H3 Physics?</h3>
+          <p>
+            Joining H3 Physics can be a rewarding decision for several
+            reasons.<br />
+            Firstly, it offers a deeper and more advanced exploration of physics
+            beyond the standard curriculum. This means you get to delve into
+            specialized topics, engage in challenging discussions, and gain a
+            more profound understanding of the subject.
+            <br /><br />Secondly, participating in H3 Physics can be
+            intellectually stimulating and fulfilling. You'll be surrounded by
+            like-minded peers who share your passion for physics, creating a
+            conducive environment for meaningful discussions and collaborative
+            learning. The challenges posed by the advanced content can foster
+            critical thinking and problem-solving skills, which are beneficial
+            for your academic and personal growth.
+          </p>
+        </div>
+        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+          <img src="images/H3 Content Syllabus.png" />
+        </div>
+      </div>
+    </div>
+    <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
+      <div class="row">
+        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+          <img src="images/ASR logo.png" class="rounded-5" />
+        </div>
+        <div
+          class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6"
+        >
+          <h2 class="display-3 text-primary center" id="H3NTU">
+            H3 NTU Semiconductors Physics & Devices
+          </h2>
+          <h3 class="py-3"></h3>
+          <p>
+            The module is designed to be an extension of the curriculum that is
+            covered in H2 Physics. It delves deeper into the different topics
+            and covers contents not taught in the classroom. Students get to
+            work in the NTU laboratory under the guidance of the NTU faculty.
+            <br /><br />
+            NTU-H3 Semiconductor Physics & Devices is offered at the start of
+            the JC2/Year 6 and the lessons will typically run from the second
+            week of January till the end of April, culminating in a Written
+            Examination in mid-May.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Put your code here!-->
+
+    <div class="container-fluid bg-footer">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-white">2023 Bradley & Jerome</p>
+
+        <a
+          href="index.html"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <img src="images/FF logo.svg" width="40" />
+        </a>
+
+        <ul class="nav nav-pills col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a
+              href="https://drive.google.com/drive/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL?usp=sharing"
+              class="nav-link px-2 text-secondary"
+              >Google Drive</a
+            >
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" role="button">Resources</a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li>
-                <a class="dropdown-item"
-                  href="https://drive.google.com/drive/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL?usp=sharing">Google
-                  Drive</a>
-              </li>
-              <li>
-                <a class="dropdown-item"
-                  href="https://drive.google.com/file/d/1S0Cfz8b-qcuChJPbXM8A7lks3gbQ0b3E/view?usp=sharing">University
-                  Textbook</a>
-              </li>
-              <li>
-                <a class="dropdown-item"
-                  href="https://drive.google.com/file/d/1gtQrrtVuHSeBBLLqwffzDevAvfwn7jAf/view?usp=sharing">SPhO
-                  Formulas</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="articles.html">Articles</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="problems.html">Problems</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="index.html#Comprehensive_Resources">Full list<br />
-                  of Resources</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="FAQ.html">FAQ</a>
-              </li>
-            </ul>
+          <li class="nav-item">
+            <a href="articles.html" class="nav-link px-2 text-secondary"
+              >Articles</a
+            >
           </li>
-          <li class="nav-item ms-2">
-            <a class="nav-link text-secondary" href="contact_us.html">Contribute</a>
+          <li class="nav-item">
+            <a href="FAQ.html" class="nav-link px-2 text-secondary">FAQ</a>
           </li>
-          <li class="nav-item ms-2">
-            <a class="nav-link text-secondary" href="credit.html">Credits</a>
+          <li class="nav-item">
+            <a href="contact_us.html" class="nav-link px-2 text-secondary"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="credit.html" class="nav-link px-2 text-secondary"
+              >Credits</a
+            >
           </li>
         </ul>
-      </div>
+      </footer>
     </div>
-  </nav>
-  <div class="p-2">
-    <div class="bg-img"></div>
-    <div class="container-sm container-fluid mt-5 pt-5 mb-5 pb-2">
-      <div class="bg-white-subtle gradient-thing rounded-5 center border border-dark">
-        <div>
-          <h1 class="display-1">Competitions & Events<br /></h1>
-        </div>
-      </div>
-      <div class="center pt-3">
-        <table class="table table-hover table-sm border border-dark fit_it_css">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Event</th>
-              <th scope="col">Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-
-              <td>
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#SPhO">
-                  Singapore Physics Olympiad</a>
-              </td>
-
-              <td>Competition</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#SPhL">
-                  Singapore Physics League
-                </a>
-              </td>
-
-              <td>Competition</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#QCamp">QCamp</a>
-              </td>
-              <td>Event</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#Physics Engagement Camp">Physics Engagement Camp</a>
-              </td>
-              <td>Event</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#Astrochallenge">Astrochallenge</a>
-              </td>
-              <td>Competition</td>
-            </tr>
-            <tr>
-              <th scope="row">6</th>
-              <td>
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#YDSP">YDSP</a>
-              </td>
-              <td>Event</td>
-            <tr>
-              <th scope="row">7</th>
-              <td>
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#AlphaASR">Alpha Scholars</a>
-              </td>
-              <td>Event</td>
-            <tr>
-              <th scope="row">8</th>
-              <td>
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#H3Physics">H3 Physics</a>
-              </td>
-              <td>Additional Subject</td>
-            <tr>
-              <th scope="row">9</th>
-              <td>
-                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="#H3NTU">H3 NTU Semiconductor Physics & Devices</a>
-              </td>
-              <td>Additional Subject</td>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
-      <div class="row">
-        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-          <img src="images/SPho.svg" />
-        </div>
-        <div class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6">
-          <h2 class="display-3 text-danger center" id="SPhO">
-            Singapore Physics Olympiad [SPhO]
-          </h2>
-          <h3 class="py-3 text-danger">What is Physics Olympiad?</h3>
-          <p>
-            It is on of the most prestigious national physics competitions. A
-            score of <strong>high silver</strong> or better would receive an
-            invitation to train and compete in the International Physics
-            Olympiad, the most prestitigious physics olympiads for
-            Pre-University students
-          </p>
-          <h3 class="py-3 text-danger">When is the training?</h3>
-          <p>
-            Training would occur from Term 3 ownwards, picking from the
-            cohort's best physics students, with students being rigorously
-            taught the skills to excel at SPhO. <br /><br />A selection text
-            would then be held among these students to narrow it down to a
-            select few [~8] <br /><br />The actual SPhO test would occur on
-            November, with the best being invited back for a practical round
-          </p>
-          <h3 class="py-3 text-danger">What do we do to prepare you?</h3>
-          <p>
-            Our Physics Olympiad pre-training would lay the fundamental
-            groundwork for you to excel and solve SPhO's considerably more
-            difficult questions, by exposing you to foreign concepts and ideas
-            early on.<br /><br />
-            We would teach the basic theores, which would then be elaborated
-            and expanded upon by the official training.<br /><br />
-            Sign up for our training program!
-          </p>
-          <a class="btn btn-danger btn-lg my-4 button_size" href="under_construction.html" target="_blank">Sign Up</a>
-          <!--UPDATE WITH REGISTRATION FORM-->
-        </div>
-      </div>
-    </div>
-    <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
-      <div class="row">
-        <div class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6">
-          <h2 class="display-3 text-primary center" id="SPhL">
-            Singapore Physics League [SPhL]
-          </h2>
-          <h3 class="py-3">What is Physics League?</h3>
-          <p>
-            The Singapore Physics League (SPhL) is a 4-hour online
-            competition, where teams of 3 - 5 students race to solve fun
-            physics problems. <br /><br />
-            Learning and doing physics is a team sport - gather your group of
-            fellow physics enthusiasts to participate as a team and discuss
-            interesting physics together!
-          </p>
-          <h3 class="py-3">When and Where?</h3>
-          <p>
-            SPhL 2024 will be held on July 2024 (Sat or Sun), from 9 AM to 1
-            PM. <br /><br />
-            As the competition is fully online, you and your team may be
-            physically located at any spatial coordinates of your choice!
-            <br /><br />
-            All you need is a computer and a team in order to gain access to
-            our online platform. You must log in to view problems and submit
-            answers.
-          </p>
-          <a class="btn btn-primary btn-lg my-4 button_size" href="https://sgphysicsleague.org/" role="button"
-            target="_blank">Sign Up</a>
-          <a class="btn btn-primary btn-lg my-4 button_size"
-            href="https://docs.avero-tech.com/asrjc/d08c61b30ebc926ada8be07790d47f62.html" target="_blank">Summary</a>
-        </div>
-        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-          <img src="images/SPhL speech icon.png" />
-        </div>
-      </div>
-    </div>
-    <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
-      <div class="row">
-        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-          <img src="images/QCamp.jfif" class="rounded-5 border border-dark" />
-        </div>
-        <div class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6">
-          <h2 class="display-3 text-primary center" id="QCamp">QCamp</h2>
-          <h3 class="py-3">What is QCamp?</h3>
-          <p>
-            QCamp is a one-week summer school for curious and inquisitive
-            minds who wish to explore and understand the physical laws that
-            govern the world’s smallest scales: quantum physics.
-            <br /><br />The scope of QCamp is to provide vivid demonstrations
-            of these laws, offer career advice, as well as to help students
-            build a technical foundation for independent exploration of this
-            world. <br /><br />QCamp is organised by the Centre for Quantum
-            Technologies (CQT) at the National University of Singapore.
-          </p>
-          <h3 class="py-3">Who is it for?</h3>
-          <p>
-            QCamp is suited for JC2 students and students from other
-            institutions of similar age who hold a strong fascination for
-            physics and natural sciences, and who wish to pursue their
-            curiosity further. QCamp promotes diversity of motivations and
-            backgrounds. <br /><br />Do you feel a sense of excitement about
-            the prospect of spending a week learning just a little more about
-            the imaginative concepts and technical details of our universe’s
-            inner workings together with like-minded students? Then QCamp is
-            the right place for you!
-          </p>
-          <h3 class="py-3">When and Where?</h3>
-          <p>
-            One week in June, at the Centre for Quantum Technologies <br />
-            National University of Singapore<br />
-            Block S15, 3 Science Drive 2<br />
-            Singapore 117543
-          </p>
-          <a class="btn btn-primary btn-lg my-4 button_size" href="https://qcamp.quantumlah.org/register/" role="button"
-            target="_blank">Sign Up</a>
-          <!--UPDATE THE LINK QCAMP-->
-          <a class="btn btn-primary btn-lg my-4 button_size"
-            href="https://docs.avero-tech.com/asrjc/2fbb92495c46b76bc8070f6a1747b1ef.html" target="_blank">Summary</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
-    <div class="row">
-      <div class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6">
-        <h2 class="display-3 text-primary center" id="Physics Engagement Camp">
-          Physics Engagment Camp
-        </h2>
-        <h3 class="py-3">What is Physics Engagement Camp?</h3>
-        <p>
-          Physics Engagement Camp (PEC) aims to invite students passionate
-          about physics to learn more! <br /><br />Students can participate in
-          lectures from esteemed professors, who are leaders in their field,
-          to learn more about the frontiers of physics. Lab tours and hands-on
-          activities gives the student a chance to experience science in the
-          flesh.
-        </p>
-        <h3 class="py-3">When and Where?</h3>
-        <p>
-          Typically held on December 14 & 15 from 9:30am - 6:30pm at NUS
-          <br />[2024 date and location not out yet]
-        </p>
-        <a class="btn btn-primary btn-lg my-4 button_size" href="under_construction.html" role="button"
-          target="_blank">Sign Up</a>
-        <!--UPDATE THE LINK PHYSICS ENGAGEMENT CAMP-->
-        <a class="btn btn-primary btn-lg my-4 button_size"
-          href="https://docs.avero-tech.com/asrjc/cebff74d20c7b8ee56ba3716d84fa6e2.html" target="_blank"
-          loading="lazy">Summary</a>
-      </div>
-      <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-        <img src="images/Physics Engagment Camp.png" />
-      </div>
-    </div>
-  </div>
-  <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
-    <div class="row">
-      <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-        <img src="images/Astrochallenge.jfif" class="rounded-5" />
-      </div>
-      <div class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6">
-        <h2 class="display-3 text-primary center" id="Astrochallenge">
-          Astrochallenge
-        </h2>
-        <h3 class="py-3">What is Astrochallenge?</h3>
-        <p>
-          AstroChallenge is an annual astronomy competition jointly organised
-          by the Astronomical Societies of National University of Singapore
-          and Nanyang Technological University. The competition is specially
-          tailored for students in Secondary Schools, Junior Colleges and
-          Polytechnics. Students will be exposed to a comprehensive array of
-          questions that range from theoretical to practical astronomy
-          <br /><br />
-          It is hosted over the span of a few days and challenges participants
-          in all aspects of astronomy: from theoretical papers to practical
-          observation techniques.
-        </p>
-        <h3 class="py-3">When and Where?</h3>
-        <p>AstroChallenge is held annually in June, in NTU</p>
-        <a class="btn btn-primary btn-lg my-4 button_size" href="under_construction.html" role="button"
-          target="_blank">Sign Up</a>
-        <!--UPDATE THE LINK ASTROCHALLENGE-->
-        <a class="btn btn-primary btn-lg my-4 button_size"
-          href="https://docs.avero-tech.com/asrjc/4a33e394a6f07df7a18568816908da06.html" target="_blank"
-          loading="lazy">Summary</a>
-      </div>
-    </div>
-  </div>
-  <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
-    <div class="row">
-      <div class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6">
-        <h2 class="display-3 text-primary center" id="YDSP">
-          Young Defense Scientist Programme [YDSP]
-        </h2>
-        <h3 class="py-3">What is YDSP?</h3>
-        <p>
-          Explore your future in science and technology with them. Work on
-          challenging and meaningful projects or join YDSP's camps and
-          activities and embark on the adventure of a lifetime! <br /><br />
-          Gain greater insights into the exciting work they do in defending
-          Singapore. Learn from experienced mentors and shape your creativity
-          and spirit of innovation through immersive science and technology
-          experiences. <br /><br />
-          Join their
-          <a href="https://www.dsta.gov.sg/join-us/student/young-defence-scientists-programme"
-            class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">YSDP
-            Science & Technology Camp </a>or<br />
-          Join their
-          <a href="https://www.dsta.gov.sg/join-us/student/young-defence-scientists-programme"
-            class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">YSDP
-            World of Science </a>or<br />
-          Join their
-          <a href="https://www.dsta.gov.sg/join-us/student/young-defence-scientists-programme"
-            class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Research@YDSP
-          </a>or<br />
-          Join their
-          <a href="https://www.dsta.gov.sg/join-us/student/young-defence-scientists-programme"
-            class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">YSDP
-            Congress </a>or<br />
-        </p>
-      </div>
-      <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-        <img src="images/YDSP.jpg" class="rounded-5" />
-      </div>
-    </div>
-  </div>
-  <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
-    <div class="row">
-      <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-        <img src="images/ASR logo.png" class="rounded-5" />
-      </div>
-      <div class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6">
-        <h2 class="display-3 text-primary center" id="AlphaASR">
-          ASR Scholars/Alpha Programme
-        </h2>
-        <h3 class="py-3">What is ASR Scholars Programme?</h3>
-        <p>
-          ASR Scholars Programme is a programme exclusively for ASR students
-          who score well in their MYCT's [Mid Year Common Test] and/or EOY's
-          [End Of Year] ~74RP <br /><br />
-          ASR Scholars Programme will expose you to events and opportunities,
-          as well as mentor you to help increase your chances of a
-          <strong><em>scholarship</em></strong>.
-        <div class='display-6 text-danger'><strong>Strongly advised to sign up when offered</strong></div>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
-    <div class="row">
-
-      <div class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6">
-        <h2 class="display-3 text-primary center" id="H3Physics">
-          H3 Physics
-        </h2>
-        <h3 class="py-3">What is H3 Physics?</h3>
-        <p>
-          You are expected to be able to use your H2 and H3 knowledge in unseen circumstances during exams. As for the
-          math, there's a lot of algebraic manipulation and calculus. And as for the new content, the content itself is
-          not a lot, each chapter is similar to a H2 chapter and we cover all 5 in one semester, but the complexity is
-          much higher and you'll have to spend more time to understand it, and also each questions are more time
-          consuming.
-        </p>
-      </div>
-      <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-        <img src="images/H3 Content Syllabus.png" class="rounded-5" />
-      </div>
-    </div>
-  </div>
-  <div class="container-sm container-fluid py-3 mt-5 pt-2 mb-5 pb-5">
-    <div class="row">
-      <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-        <img src="images/ASR logo.png" class="rounded-5" />
-      </div>
-      <div class="bg-white-subtle gradient-thing rounded-5 border border-dark col-md-6">
-        <h2 class="display-3 text-primary center" id="H3NTU">
-          H3 NTU Semiconductors Physics & Devices
-        </h2>
-        <h3 class="py-3">What is unnamed and undone?</h3>
-        <p>
-          ASR Scholars Programme is a programme exclusively for ASR students
-          who score well in their MYCT's [Mid Year Common Test] and/or EOY's
-          [End Of Year] ~74RP <br /><br />
-          ASR Scholars Programme will expose you to events and opportunities,
-          as well as mentor you to help increase your chances of a
-          <strong><em>scholarship</em></strong>.
-        <div class='display-6 text-danger'><strong>Strongly advised to sign up when offered</strong></div>
-        </p>
-      </div>
-    </div>
-  </div>
-  <!--Put your code here!-->
-
-  <div class="container-fluid bg-footer">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-white">2023 Bradley & Jerome</p>
-
-      <a href="index.html"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <img src="images/FF logo.svg" width="40" />
-      </a>
-
-      <ul class="nav nav-pills col-md-4 justify-content-end">
-        <li class="nav-item">
-          <a href="https://drive.google.com/drive/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL?usp=sharing"
-            class="nav-link px-2 text-secondary">Google Drive</a>
-        </li>
-        <li class="nav-item">
-          <a href="articles.html" class="nav-link px-2 text-secondary">Articles</a>
-        </li>
-        <li class="nav-item">
-          <a href="FAQ.html" class="nav-link px-2 text-secondary">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact_us.html" class="nav-link px-2 text-secondary">Contact us</a>
-        </li>
-        <li class="nav-item">
-          <a href="credit.html" class="nav-link px-2 text-secondary">Credits</a>
-        </li>
-      </ul>
-    </footer>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

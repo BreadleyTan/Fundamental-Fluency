@@ -1,219 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="images/FF logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="icon" href="images/FF logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <nav class="navbar navbar-expand-xl text-bg-dark navbar-dark fixed-top">
+      <div class="container-md container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="images/FF logo.svg" alt="Bootstrap" width="40" />
+        </a>
+        <a class="navbar-brand" href="index.html">Fundamental Fluency</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="nav justify-content-end nav-underline">
+            <li class="nav-item ms-2">
+              <a
+                class="nav-link text-primary"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
 
-<body>
-  <nav class="navbar navbar-expand-xl text-bg-dark navbar-dark fixed-top">
-    <div class="container-md container-fluid">
-      <a class="navbar-brand" href="/">
-        <img src="images/FF logo.svg" alt="Bootstrap" width="40" />
-      </a>
-      <a class="navbar-brand" href="index.html">Fundamental Fluency</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-        <ul class="nav justify-content-end nav-underline">
-          <li class="nav-item ms-2">
-            <a class="nav-link text-primary" aria-current="page" href="index.html">Home</a>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" role="button">Upcoming</a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="lecture.html">Lectures</a></li>
-              <li>
-                <a class="dropdown-item" href="event_competition.html">Competitions & Events</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" role="button">Resources</a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item"
-                  href="https://drive.google.com/drive/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL?usp=sharing">Google
-                  Drive</a></li>
-              <li><a class="dropdown-item"
-                  href="https://drive.google.com/file/d/1S0Cfz8b-qcuChJPbXM8A7lks3gbQ0b3E/view">University Textbook</a>
-              </li>
-              <li><a class="dropdown-item"
-                  href="https://drive.google.com/file/d/1gtQrrtVuHSeBBLLqwffzDevAvfwn7jAf/view">SPhO Formulas</a></li>
-              <li><a class="dropdown-item" href="articles.html">Articles</a></li>
-              <li><a class="dropdown-item" href="problems.html">Problems</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="index.html#Comprehensive_Resources">Full list<br> of Resources</a></li>
-              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
-            </ul>
-          </li>
-          <li class="nav-item ms-2">
-            <a class="nav-link text-secondary" href="contact_us.html">Contribute</a>
-          </li>
-          <li class="nav-item ms-2">
-            <a class="nav-link text-secondary" href="credit.html">Credits</a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-  <div class="bg-img1"></div>
-  <div class="bg-img2"></div>
-  <div class="p-2">
-    <div class="container-sm container-fluid mt-5 pt-5 mb-5 pb-5">
-      <div class="row">
-        <div class="col-md-6 bg-white-subtle gradient-thing rounded-5 border border-dark">
-          <h1 class="display-1">Advanced <br />Physics</h1>
-          <p class="lead">
-            Welcome to our Physics Hub at ASRJC!
-            <br /><br />
-            We're a passionate student initiative dedicated to making the
-            complexities of university-level physics accessible to everyone.
-            <br /><br />Dive into physics with our extensive collection of
-            free resources, engaging lectures, and meticulously worked-through
-            problems.<br /><br />
-            Whether you're gearing up for physics competitions like SPhO,
-            SPhL, SYPT, or simply looking to strengthen your understanding of
-            physics concepts, our materials are tailored to suit your needs.
-            Join us on this exciting journey of discovery and
-            <b><em>register</em></b> for our next lecture today!
-        </div>
-        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-          <img src="images/FF logo.svg" loading="lazy" alt="Logo" />
-        </div>
-      </div>
-    </div>
-    <div class="container-sm container-fluid mt-8 pt-5 pt-5">
-      <div class="row">
-        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
-          <img class='rounded-5' src="images/ASR logo.png" loading="lazy" alt="ASR logo" />
-        </div>
-        <div class="col-md-6 bg-white-subtle gradient-thing rounded-5 border border-dark">
-          <h1 class="display-1 ms-2 mt-2">Topics covered</h1>
-          <p class="lead">
-          <ol>
-            <li>
-              Approximation using Binomial Expansion
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-bs-toggle="dropdown"
+                role="button"
+                >Upcoming</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="lecture.html">Lectures</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="event_competition.html"
+                    >Competitions & Events</a
+                  >
+                </li>
+              </ul>
             </li>
-            <li>
-              Binomial series
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-bs-toggle="dropdown"
+                role="button"
+                >Resources</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://drive.google.com/drive/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL?usp=sharing"
+                    >Google Drive</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://drive.google.com/file/d/1S0Cfz8b-qcuChJPbXM8A7lks3gbQ0b3E/view"
+                    >University Textbook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://drive.google.com/file/d/1gtQrrtVuHSeBBLLqwffzDevAvfwn7jAf/view"
+                    >SPhO Formulas</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="articles.html">Articles</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="problems.html">Problems</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="index.html#Comprehensive_Resources"
+                    >Full list<br />
+                    of Resources</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              </ul>
             </li>
-            <li>
-              Taylor Series
+            <li class="nav-item ms-2">
+              <a class="nav-link text-secondary" href="contact_us.html"
+                >Contribute</a
+              >
             </li>
-            <li>
-              Ordinary Differential Equations
+            <li class="nav-item ms-2">
+              <a class="nav-link text-secondary" href="credit.html">Credits</a>
             </li>
-            <li>
-              Integration/Differentiation with vectors
-            </li>
-            <li>
-              Differentiation with vectors
-            </li>
-            <li>
-              Rotational Motion
-            </li>
-            <li>
-              Gravitation
-            </li>
-            <li>
-              Work-Energy Theorem
-            </li>
-            <li>
-              Dynamics of Rotational Motion
-            </li>
-            <li>
-              Electromagnetism
-            </li>
-          </ol>
-          </p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg m-1" href="contact_us.html" role="button">Request Topic</a>
-            <a class="btn btn-primary btn-lg m-1" href="contact_us.html" role="button">Clarify Misconceptions
-            </a>
-          </p>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="container-sm container-fluid mt-5 pt-5 mb-5 pb-5">
-      <div class="row pt-5" id="resources">
-        <div class="col-md-6 bg-white-subtle gradient-thing rounded-5 border border-dark">
-          <h1 class="display-1 ms-2 mt-2" id='Comprehensive_Resources'>Resources</h1>
-          <div class="row p-4">
-            <a class="btn btn-primary btn-lg my-1"
-              href="https://docs.google.com/document/d/1qFEosMGrXIc-YEpzghEn-xEYazQy0qiv6LJV_i2I0GU/edit?usp=sharing"
-              role="button" target="_blank">Our Mission</a><br>
-            <a class="btn btn-primary btn-lg my-1"
-              href="https://drive.google.com/drive/folders/1Iorw2gZhfxWjBS_Dpvi7ooJIRWaNz9iv?usp=sharing" role="button"
-              target="_blank">Olympiad Physics Notes</a><br>
-            <a class="btn btn-primary btn-lg my-1"
-              href="https://drive.google.com/file/d/1S0Cfz8b-qcuChJPbXM8A7lks3gbQ0b3E/view?usp=sharing" role="button"
-              target="_blank">University Physics Textbook</a><br>
-            <a class="btn btn-primary btn-lg my-1"
-              href="https://drive.google.com/drive/folders/1syuRJXTPgUQanLMfYDiN6YNQZ3lC0HA0?usp=sharing" role="button"
-              target="_blank">H3 Physics Papers</a><br>
-            <a class="btn btn-primary btn-lg my-1"
-              href="https://drive.google.com/file/d/1JwaqSSTrD1eT06CwBandFEAyz2RFlyo0/view?usp=sharing" role="button"
-              target="_blank">H3 Summary Notes</a><br>
-            <a class="btn btn-primary btn-lg my-1"
-              href="https://drive.google.com/file/d/1gtQrrtVuHSeBBLLqwffzDevAvfwn7jAf/view?usp=sharing" role="button"
-              target="_blank">SPhO
-              Formulas</a><br>
-            <a class="btn btn-primary btn-lg my-1"
-              href="https://drive.google.com/file/d/1loAXnf7_Cn9OG9tEfcOnXzA3VnStud05/view?usp=sharing" role="button"
-              target="_blank">H2 Physics Summary Notes</a><br>
-            <a class="btn btn-primary btn-lg my-1"
-              href="https://drive.google.com/file/d/1qyLVzvqC_YYy7FojVA0qmAgwrDgJV18n/view?usp=sharing" role="button"
-              target="_blank">Competitive Physics: Mechanics & Waves</a>
-            <a class="btn btn-primary btn-lg my-1"
-              href="https://drive.google.com/file/d/1DQQ57wnpl9KhlGhrYrumMaDI2XOqJ7Ip/view?usp=sharing" role="button"
-              target="_blank">Competitive Physics: Mechanics & Waves</a>
-            <a class="btn btn-primary btn-lg my-1"
-              href="https://drive.google.com/drive/u/1/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL" role="button"
-              target="_blank">Google Drive</a>
+    </nav>
+    <div class="bg-img1"></div>
+    <div class="bg-img2"></div>
+    <div class="p-2">
+      <div class="container-sm container-fluid mt-5 pt-5 mb-5 pb-5">
+        <div class="row">
+          <div
+            class="col-md-6 bg-white-subtle gradient-thing rounded-5 border border-dark"
+          >
+            <h1 class="display-1">Advanced <br />Physics</h1>
+            <p class="lead">
+              Welcome to our Physics Hub at ASRJC!
+              <br /><br />
+              We're a passionate student initiative dedicated to making the
+              complexities of university-level physics accessible to everyone.
+              <br /><br />Dive into physics with our extensive collection of
+              free resources, engaging lectures, and meticulously worked-through
+              problems.<br /><br />
+              Whether you're gearing up for physics competitions like SPhO,
+              SPhL, SYPT, or simply looking to strengthen your understanding of
+              physics concepts, our materials are tailored to suit your needs.
+              Join us on this exciting journey of discovery and
+              <b><em>register</em></b> for our next lecture today!
+            </p>
+          </div>
+
+          <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+            <img src="images/FF logo.svg" loading="lazy" alt="Logo" />
           </div>
         </div>
-        <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row p-5">
-          <a href='https://drive.google.com/drive/u/1/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL' target='_blank'><img
-              class="spin" src="images/Google_Drive_icon_(2020).svg" loading="lazy" />
-          </a>
+      </div>
+      <div class="container-sm container-fluid mt-8 pt-5 pt-5">
+        <div class="row">
+          <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row">
+            <img
+              class="rounded-5"
+              src="images/ASR logo.png"
+              loading="lazy"
+              alt="ASR logo"
+            />
+          </div>
+          <div
+            class="col-md-6 bg-white-subtle gradient-thing rounded-5 border border-dark"
+          >
+            <h1 class="display-1 ms-2 mt-2">Topics covered</h1>
+
+            <ol>
+              <li>Approximation using Binomial Expansion</li>
+              <li>Binomial series</li>
+              <li>Taylor Series</li>
+              <li>Ordinary Differential Equations</li>
+              <li>Integration/Differentiation with vectors</li>
+              <li>Differentiation with vectors</li>
+              <li>Rotational Motion</li>
+              <li>Gravitation</li>
+              <li>Work-Energy Theorem</li>
+              <li>Dynamics of Rotational Motion</li>
+              <li>Electromagnetism</li>
+            </ol>
+
+            <p class="lead">
+              <a
+                class="btn btn-primary btn-lg m-1"
+                href="contact_us.html"
+                role="button"
+                >Request Topic</a
+              >
+              <a
+                class="btn btn-primary btn-lg m-1"
+                href="contact_us.html"
+                role="button"
+                >Clarify Misconceptions
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-sm container-fluid mt-5 pt-5 mb-5 pb-5">
+        <div class="row pt-5" id="resources">
+          <div
+            class="col-md-6 bg-white-subtle gradient-thing rounded-5 border border-dark"
+          >
+            <h1 class="display-1 ms-2 mt-2" id="Comprehensive_Resources">
+              Resources
+            </h1>
+            <div class="row p-4">
+              <a
+                class="btn btn-primary btn-lg my-1"
+                href="https://docs.google.com/document/d/1qFEosMGrXIc-YEpzghEn-xEYazQy0qiv6LJV_i2I0GU/edit?usp=sharing"
+                role="button"
+                target="_blank"
+                >Our Mission</a
+              ><br />
+              <a
+                class="btn btn-primary btn-lg my-1"
+                href="https://drive.google.com/drive/folders/1Iorw2gZhfxWjBS_Dpvi7ooJIRWaNz9iv?usp=sharing"
+                role="button"
+                target="_blank"
+                >Olympiad Physics Notes</a
+              ><br />
+              <a
+                class="btn btn-primary btn-lg my-1"
+                href="https://drive.google.com/file/d/1S0Cfz8b-qcuChJPbXM8A7lks3gbQ0b3E/view?usp=sharing"
+                role="button"
+                target="_blank"
+                >University Physics Textbook</a
+              ><br />
+              <a
+                class="btn btn-primary btn-lg my-1"
+                href="https://drive.google.com/drive/folders/1syuRJXTPgUQanLMfYDiN6YNQZ3lC0HA0?usp=sharing"
+                role="button"
+                target="_blank"
+                >H3 Physics Papers</a
+              ><br />
+              <a
+                class="btn btn-primary btn-lg my-1"
+                href="https://drive.google.com/file/d/1JwaqSSTrD1eT06CwBandFEAyz2RFlyo0/view?usp=sharing"
+                role="button"
+                target="_blank"
+                >H3 Summary Notes</a
+              ><br />
+              <a
+                class="btn btn-primary btn-lg my-1"
+                href="https://drive.google.com/file/d/1gtQrrtVuHSeBBLLqwffzDevAvfwn7jAf/view?usp=sharing"
+                role="button"
+                target="_blank"
+                >SPhO Formulas</a
+              ><br />
+              <a
+                class="btn btn-primary btn-lg my-1"
+                href="https://drive.google.com/file/d/1loAXnf7_Cn9OG9tEfcOnXzA3VnStud05/view?usp=sharing"
+                role="button"
+                target="_blank"
+                >H2 Physics Summary Notes</a
+              ><br />
+              <a
+                class="btn btn-primary btn-lg my-1"
+                href="https://drive.google.com/file/d/1qyLVzvqC_YYy7FojVA0qmAgwrDgJV18n/view?usp=sharing"
+                role="button"
+                target="_blank"
+                >Competitive Physics: Mechanics & Waves</a
+              >
+              <a
+                class="btn btn-primary btn-lg my-1"
+                href="https://drive.google.com/file/d/1DQQ57wnpl9KhlGhrYrumMaDI2XOqJ7Ip/view?usp=sharing"
+                role="button"
+                target="_blank"
+                >Competitive Physics: Mechanics & Waves</a
+              >
+              <a
+                class="btn btn-primary btn-lg my-1"
+                href="https://drive.google.com/drive/u/1/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL"
+                role="button"
+                target="_blank"
+                >Google Drive</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 d-sm-none d-md-block d-sm-none d-none row p-5">
+            <a
+              href="https://drive.google.com/drive/u/1/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL"
+              target="_blank"
+              ><img
+                class="spin"
+                src="images/Google_Drive_icon_(2020).svg"
+                loading="lazy"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid bg-footer">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer">
-      <p class="col-md-4 mb-0 text-white"> 2023 Bradley & Jerome</p>
+    <div class="container-fluid bg-footer">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer"
+      >
+        <p class="col-md-4 mb-0 text-white">2023 Bradley & Jerome</p>
 
-      <a href="index.html"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <img src="images/FF logo.svg" width="40" />
-      </a>
+        <a
+          href="index.html"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <img src="images/FF logo.svg" width="40" />
+        </a>
 
-      <ul class="nav nav-pills col-md-4 justify-content-end">
-        <li class="nav-item"><a
-            href="https://drive.google.com/drive/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL?usp=sharing"
-            class="nav-link px-2 text-secondary">Google Drive</a></li>
-        <li class="nav-item"><a href="articles.html" class="nav-link px-2 text-secondary">Articles</a></li>
-        <li class="nav-item"><a href="FAQ.html" class="nav-link px-2 text-secondary">FAQ</a></li>
-        <li class="nav-item"><a href="contact_us.html" class="nav-link px-2 text-secondary">Contact
-            us</a></li>
-        <li class="nav-item"><a href="credit.html" class="nav-link px-2 text-secondary  ">Credits</a></li>
-      </ul>
-    </footer>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+        <ul class="nav nav-pills col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a
+              href="https://drive.google.com/drive/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL?usp=sharing"
+              class="nav-link px-2 text-secondary"
+              >Google Drive</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="articles.html" class="nav-link px-2 text-secondary"
+              >Articles</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="FAQ.html" class="nav-link px-2 text-secondary">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact_us.html" class="nav-link px-2 text-secondary"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="credit.html" class="nav-link px-2 text-secondary"
+              >Credits</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
