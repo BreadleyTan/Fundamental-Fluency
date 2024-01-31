@@ -109,3 +109,21 @@ ul.nav a:hover {
   display: flex;
   justify-content: center;
 }
+
+
+#progress-bar {
+  --progress: 0;
+  height: 6px;
+  width: var(--progress);
+  background-color: var(--dark);
+  margin-top: auto;
+  z-index: 1;
+}
+
+
+/*.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}*/
