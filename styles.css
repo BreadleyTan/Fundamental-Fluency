@@ -3,18 +3,29 @@ html {
   height: 100%;
 }
 .bg-img {
-  background-image: url("images/bg.png");
+  background-image: url("images/bigbg.png");
   height: 100%;
   z-index: -1;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  animation: scroll 20s linear infinite;
 }
+
+@keyframes scroll {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
 ul.nav a:hover {
   color: #fff !important;
 }
