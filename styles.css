@@ -111,13 +111,15 @@ ul.nav a:hover {
 }
 
 
-#progress-bar {
+#progress-bar123 {
   --progress: 0;
   height: 6px;
   width: var(--progress);
-  background-color: var(--dark);
-  margin-top: auto;
-  z-index: 1;
+  background-color: red;
+  position: relative;
+  display: block;
+  bottom: 0;
+  z-index: 3;
 }
 
 
