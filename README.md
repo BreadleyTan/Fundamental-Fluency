@@ -3,6 +3,7 @@
 Some noticeable problems that I have observed
 
 Firstly, the footer sometimes has a white horizontal line, sometimes it won't "stick", sometimes it just hovers at the bottom of the page
+To solve this, make sure your divs are correct, as it arises from a problem with divs
 
 To-Do:
 Add contents page and hyperlinks to relevant pages (for events_competitions page, add expected month beside it)
