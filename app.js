@@ -5,3 +5,14 @@ function updateProgressBar(){
 }
 
 document.addEventListener('scroll', updateProgressBar);
+
+
+window.addEventListener("load", () => { const loading = document.querySelector(".loading_screen");
+
+  loading.classList.add("loading_screen-hidden");
+
+  loading.addEventListener("transitionend", () => {
+    document.body.removeChild("loading_screen");
+  })
+
+})

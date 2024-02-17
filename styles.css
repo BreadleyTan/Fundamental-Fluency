@@ -129,3 +129,45 @@ ul.nav a:hover {
   width: 100%;
   z-index: 1;
 }*/
+
+.loading_screen {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loading_screen img { 
+            height: 120px; 
+            width: 120px; 
+            animation: loading 2s linear infinite; 
+        } 
+
+.loading_screen-hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading_screen img::after{
+  content: "";
+  width: 100px;
+  height: 100px;
+
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from{
+    transform: rotate(0turn);
+  }
+  to{
+    transform: rotate(1turn);
+  }
+}
