@@ -15,6 +15,11 @@ html {
   animation: scroll1 100s linear infinite;
   background-attachment: scroll;
 }
+@media (min-width: 700px) {
+    .bg-img1 {
+        background-attachment: fixed;
+    }
+  }
 
 @keyframes scroll1 {
   0% {
@@ -41,6 +46,12 @@ html {
   background-attachment: scroll;
 }
 
+@media (min-width: 700px) {
+  .bg-img2 {
+        background-attachment: fixed;
+    }
+  }
+
 @keyframes scroll2 {
   0% {
     transform: translateX(100%);
@@ -50,15 +61,8 @@ html {
   }
 }
 
-@media (min-width: 10000px) {
-    .bg-img1 {
-        background-attachment: fixed;
-    }
 
-  .bg-img2 {
-        background-attachment: fixed;
-    }
-  }
+
 
 ul.nav a:hover {
   color: #fff !important;
