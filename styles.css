@@ -13,6 +13,7 @@ html {
   background-size: cover;
   background-position: center center;
   animation: scroll1 100s linear infinite;
+  background-attachment: scroll;
 }
 
 @keyframes scroll1 {
@@ -37,6 +38,7 @@ html {
   background-size: cover;
   background-position: center center;
   animation: scroll2 100s linear infinite;
+  background-attachment: scroll;
 }
 
 @keyframes scroll2 {
