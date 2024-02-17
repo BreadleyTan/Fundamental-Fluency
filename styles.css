@@ -12,7 +12,6 @@ html {
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: local;
   animation: scroll1 100s linear infinite;
 }
 
@@ -37,7 +36,6 @@ html {
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: local;
   animation: scroll2 100s linear infinite;
 }
 
@@ -73,6 +71,17 @@ ul.nav a:hover {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (min-width: 768px) {
+    .bg-img1 {
+        background-attachment: fixed;
+    }
+
+  .bg-img2 {
+        background-attachment: fixed;
+    }
+
+  }
 
 .bg-footer {
   background-color: #000000;
