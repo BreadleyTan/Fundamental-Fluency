@@ -48,6 +48,16 @@ html {
   }
 }
 
+@media (min-width: 10000px) {
+    .bg-img1 {
+        background-attachment: fixed;
+    }
+
+  .bg-img2 {
+        background-attachment: fixed;
+    }
+  }
+
 ul.nav a:hover {
   color: #fff !important;
 }
@@ -72,16 +82,7 @@ ul.nav a:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
-    .bg-img1 {
-        background-attachment: fixed;
-    }
 
-  .bg-img2 {
-        background-attachment: fixed;
-    }
-
-  }
 
 .bg-footer {
   background-color: #000000;
