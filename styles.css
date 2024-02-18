@@ -3,10 +3,10 @@ html {
 }
 .bg-img1 {
   background-image: url("images/bigbg.png");
-  height: 100%;
+  height: 100vh;
   z-index: -1;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   background-repeat:no-repeat;
@@ -32,10 +32,10 @@ html {
 
 .bg-img2 {
   background-image: url("images/bigbg.png");
-  height: 100%;
+  height: 100vh;
   z-index: -1;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   translate: translateX(100%);
@@ -153,7 +153,7 @@ ul.nav a:hover {
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
@@ -161,8 +161,8 @@ ul.nav a:hover {
 }
 
 .loading_screen img { 
-            height: 120px; 
-            width: 120px; 
+            height: 100%; 
+            width: 100%; 
             animation: loading 2s linear infinite; 
         } 
 
@@ -186,4 +186,36 @@ ul.nav a:hover {
   to{
     transform: rotate(1turn);
   }
+}
+
+.fade-in-text {
+  font-family: Arial;
+  opacity: 0;
+  animation: fadeIn 2s;
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
