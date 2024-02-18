@@ -161,8 +161,8 @@ ul.nav a:hover {
 }
 
 .loading_screen img { 
-            height: 60%; 
-            width: 60%; 
+            height: 10 0%; 
+            width: 100%; 
             animation: loading 2s linear infinite; 
         } 
 
