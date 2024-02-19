@@ -191,7 +191,7 @@ ul.nav a:hover {
 .fade-in-text {
   font-family: Arial;
   opacity: 0;
-  animation: fadeIn 2s;
+  animation: fadeIn 2s ease infinite;
   animation-delay: 1s;
 }
 
