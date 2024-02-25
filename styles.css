@@ -220,17 +220,17 @@ ul.nav a:hover {
   100% { opacity: 1; }
 }
 .anta-font {
+  /*A.K.A the font at the top of the landing page*/
   font-family: "Anta", sans-serif;
   font-weight: 400;
   font-style: normal;
-  position:fixed;
   width:100%;
   margin-top: 20%;
   top: 0;
   left: 0;
   color: #ad0000;
   z-index: 999;
-  font-size: 7rem;
+  font-size: 15vw;
 }
 
 @media (min-width: 700px) {
@@ -289,7 +289,16 @@ ul.nav a:hover {
 .landing-text {
   text-shadow: #000000;
 }
+.fixed {
+  position:fixed;
+}
 
-#nostick {
-  position: static;
+
+.FundamentalFluencyLandingPage {
+  top: 50%;
+  left: 50%;
+  height: 90vh;}
+
+.hugepad {
+  padding: 70vh;
 }
