@@ -230,6 +230,7 @@ ul.nav a:hover {
   left: 0;
   color: #ad0000;
   z-index: 999;
+  font-size: 7rem;
 }
 
 @media (min-width: 700px) {
@@ -283,4 +284,12 @@ ul.nav a:hover {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;
+}
+
+.landing-text {
+  text-shadow: #000000;
+}
+
+#nostick {
+  position: static;
 }

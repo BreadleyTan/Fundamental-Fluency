@@ -21,7 +21,7 @@ const text = document.querySelector('.scroll-animation');
 
 window.addEventListener('scroll', () =>{
   const current = window.scrollY;
-  text.style.fontSize = `clamp(2rem, ${100 - current}px, 20rem)`;
+  text.style.fontSize = `clamp(2rem, ${100 - current}px, 10rem)`;
 
 })
 
