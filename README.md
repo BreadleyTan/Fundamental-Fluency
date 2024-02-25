@@ -10,7 +10,9 @@ Add contents page and hyperlinks to relevant pages (for events_competitions page
     Especially for event-competition
 Add more events if you can find them
 Fill out the event_competition details more in-depth please
-Find a way to make the background when using mobile stay stationary and not 'glitch' (attempted please update)
-Find solution to iframe problem
+Parallax index.html page
+update FFlogo hyperlink (navbar) to index.html instead of /
+Resource page
+change full list of resources hyperlink in navbar
 
 The summary buttons in the events_competitions webpage links directly to the ASR repo, so if you can't access it, you might have to update to the new relevant repo
