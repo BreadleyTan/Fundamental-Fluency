@@ -264,11 +264,13 @@ ul.nav a:hover {
 .from-left {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  display: none;
 }
 
 .from-right {
   -webkit-transform: translateX(50%);
   transform: translateX(50%);
+  display: none;
 }
 
 .from-left,
@@ -284,7 +286,7 @@ ul.nav a:hover {
 .from-right.appear {
   -webkit-transform: translateX(0);
   transform: translateX(0);
-  opacity: 1;
+  opacity: 1; 
 }
 
 .landing-text {
