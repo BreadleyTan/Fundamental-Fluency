@@ -16,6 +16,7 @@ Resource page
 change full list of resources hyperlink in navbar
 Update Resources page to remove iframes (replace with screenshots)
 continue work on New landing page
+Find why mobile screens aren't zoomed out
 
 
 The summary buttons in the events_competitions webpage links directly to the ASR repo, so if you can't access it, you might have to update to the new relevant repo

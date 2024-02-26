@@ -250,28 +250,29 @@ ul.nav a:hover {
 
 .fade-in {
   opacity: 0;
+  visibility:hidden;
   transition: opacity 250ms ease-in;
 }
 
 .fade-in.appear {
   opacity: 1;
+  visibility: visible;
 }
 
 
 
-.move-in-left {
+.from-left {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-.move-in-right {
-  grid-column: 3 / 4;
+.from-right {
   -webkit-transform: translateX(50%);
   transform: translateX(50%);
 }
 
-.move-in-left,
-.move-in-right {
+.from-left,
+.from-right {
   transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
   transition: opacity 250ms ease-in, transform 400ms ease-in;
   transition: opacity 250ms ease-in, transform 400ms ease-in,
@@ -279,8 +280,8 @@ ul.nav a:hover {
   opacity: 0;
 }
 
-.move-in-left.appear,
-.move-in-right.appear {
+.from-left.appear,
+.from-right.appear {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;

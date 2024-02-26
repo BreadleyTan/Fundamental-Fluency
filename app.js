@@ -25,12 +25,8 @@ window.addEventListener('scroll', () =>{
 
 })
 
-
-
-
-
 const faders = document.querySelectorAll(".fade-in");
-const sliders = document.querySelectorAll(".slide-in");
+const sliders = document.querySelectorAll(".move-in");
 
 const appearOptions = {
   threshold: 0,
