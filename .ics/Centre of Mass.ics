@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Asia/Singapore
+LAST-MODIFIED:20231222T233358Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Asia/Singapore
+X-LIC-LOCATION:Asia/Singapore
+BEGIN:STANDARD
+TZNAME:+08
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20240312T133550Z
+UID:1710249939287-86003@ical.marudot.com
+DTSTART;TZID=Asia/Singapore:20240419T143000
+DTEND;TZID=Asia/Singapore:20240419T153000
+SUMMARY:Centre of Mass Lecture [Fundamental Fluency]
+URL:https://breadleytan.github.io/Fundamental-Fluency/lecture.html
+DESCRIPTION:Centre of Mass\, Moment of Inertia\, all in 1 hour!
+LOCATION:Anderson Serangoon Junior College
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Centre of Mass Lecture [Fundamental Fluency]
+TRIGGER:-PT5M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

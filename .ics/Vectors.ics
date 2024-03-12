@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Asia/Singapore
+LAST-MODIFIED:20231222T233358Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Asia/Singapore
+X-LIC-LOCATION:Asia/Singapore
+BEGIN:STANDARD
+TZNAME:+08
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20240312T133534Z
+UID:1710249884607-10115@ical.marudot.com
+DTSTART;TZID=Asia/Singapore:20240419T143000
+DTEND;TZID=Asia/Singapore:20240419T153000
+SUMMARY:Vectors Lecture [Fundamental Fluency]
+URL:https://breadleytan.github.io/Fundamental-Fluency/lecture.html
+DESCRIPTION:The entirety of the H2 Math syllabus vectors\, in 1.5 hours!
+LOCATION:Anderson Serangoon Junior College
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vectors Lecture [Fundamental Fluency]
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

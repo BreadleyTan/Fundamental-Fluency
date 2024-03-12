@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Asia/Singapore
+LAST-MODIFIED:20231222T233358Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Asia/Singapore
+X-LIC-LOCATION:Asia/Singapore
+BEGIN:STANDARD
+TZNAME:+08
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20240312T133733Z
+UID:1710250403619-73141@ical.marudot.com
+DTSTART;TZID=Asia/Singapore:20240510T133000
+DTEND;TZID=Asia/Singapore:20240510T143000
+SUMMARY:Magnetic Field lecture [Fundamental Fluency]
+URL:https://breadleytan.github.io/Fundamental-Fluency/lecture.html
+DESCRIPTION:Magnetic Field\, in 1 hr!
+LOCATION:Anderson Serangoon Junior College
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Magnetic Field lecture [Fundamental Fluency]
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
