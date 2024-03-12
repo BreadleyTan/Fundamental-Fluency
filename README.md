@@ -10,6 +10,6 @@ Add contents page and hyperlinks to relevant pages (for events_competitions page
     Especially for event-competition
 Add more events if you can find them
 Fill out the event_competition details more in-depth please
-
+Replace under_construction in lecture.html about the group chat
 
 The summary buttons in the events_competitions webpage links directly to the ASR repo, so if you can't access it, you might have to update to the new relevant repo

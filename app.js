@@ -62,3 +62,4 @@ sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
 
+$('.alert').alert()
