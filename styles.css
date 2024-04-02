@@ -324,4 +324,5 @@ iframe {
 
 .MathJax {
   overflow-x: auto;
+  overflow-y: hidden;
 }
