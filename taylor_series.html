@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binomial and Taylor Series</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--MathJax script starts here-->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"></script>
+    <!--MathJax script ends here-->
+    <link rel="icon" href="images/FF logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!--The loading screens do not work when using MathJax-->
+    <div class="loading_screen">
+      <img src="images/FF logo.svg" />
+    </div>
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-xl text-bg-dark navbar-dark">
+        <div class="container-md container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="images/FF logo.svg" alt="Bootstrap" width="40" />
+          </a>
+          <a class="navbar-brand" href="index.html">Fundamental Fluency</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <ul class="nav justify-content-end nav-underline">
+              <li class="nav-item ms-2">
+                <a
+                  class="nav-link text-primary"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                  >Upcoming</a
+                >
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="lecture.html">Lectures</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="event_competition.html"
+                      >Competitions & Events</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-secondary"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                  >Resources</a
+                >
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://drive.google.com/drive/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL?usp=sharing"
+                      >Google Drive</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://drive.google.com/file/d/1S0Cfz8b-qcuChJPbXM8A7lks3gbQ0b3E/view"
+                      >University Textbook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://drive.google.com/file/d/1gtQrrtVuHSeBBLLqwffzDevAvfwn7jAf/view"
+                      >SPhO Formulas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="articles.html">Articles</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="problems.html">Problems</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="resources.html"
+                      >Full list<br />
+                      of Resources</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link text-secondary" href="contact_us.html"
+                  >Contribute</a
+                >
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link text-secondary" href="credit.html"
+                  >Credits</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="progress-bar123"></div>
+    </div>
+    <div class="p-2">
+      <div class="bg-img1"></div>
+      <div class="bg-img2"></div>
+      <div class="container-sm container-fluid mt-5 pt-5 mb-5 pb-5">
+        <div class="bg-white-subtle gradient-thing rounded-5">
+          <h1 class="display-1"></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-2">
+      <div class="bg-img1"></div>
+      <div class="bg-img2"></div>
+
+      <div class="container-sm container-fluid mt-5 pt-5 mb-5 pb-5">
+        <div
+          class="bg-white-subtle gradient-thing rounded-5 border border-dark"
+        >
+          <h1 class="display-1 text-center m-2">
+            Binomial, Maclaurin, Taylor Series
+          </h1>
+          <div class="px-5">
+            <div class="creditation py-5 pb-2">
+              <img
+                src="Articles/Taylor Series/Bradley Professional Picture.jfif"
+                class="articlepic"
+              />
+              <p class="creditation d-inline">Bradley [Updated 2/4/2024]</p>
+            </div>
+          </div>
+
+          <img
+            class="py-4 hero_image"
+            src="Articles/Taylor Series/Taylor Series.svg"
+          />
+
+          <div class="px-5 m">
+            <h2>Glossary</h2>
+            <span class="MathJax">$$Polynomial:y=ax^n+bx^{n-1}+cx^{n-2}$$</span>
+          </div>
+          <div class="px-5">
+            <h2 class="pt-5">Binomial</h2>
+            <p class="pb-2">
+              Math can often be confusing. I remember I was confused the first
+              time I heard that I could create a polynomial equation which would
+              “simulate” and behave like any function at a point.
+              <br /><br />But it is very helpful, especially when confronted
+              with “difficult” equations in physics which require approximation.
+              So I hope through this article we will get to understand more
+              about this weird class of functions <br /><br />
+              A good place to start is Binomial expansion.
+              <span class="MathJax"
+                >$${(ax\ +\ b)}^n=\binom{n}{0}{\rm ax}^nb^0+\binom{n}{1}{\rm
+                ax}^{n-1}b^1+\binom{n}{2}{\rm ax}^{n-2}b^2...\binom{n}{n}{\rm
+                ax}^0b^n$$</span
+              >
+            </p>
+            <div class="text-center">OR</div>
+            <p>
+              $$\left(ax+b\right)^n=\sum_{k=0}^{n}{{\rm ax}^{n-k}b^k}$$ Most
+              should be familiar with this equation, but fewer know that the
+              expansion works on negative and fractional powers <br />For
+              fractional and negative powers, it expands infinitely, given by a
+              more general equation,
+              <span class="MathJax"
+                >$$\left(1+x\right)^n=1+nx+\frac{n\left(n-1\right)}{2!}x^2+\frac{n\left(n-1\right)\left(n-2\right)}{3!}x^3\ldots$$
+              </span>
+            </p>
+            <!--Accordion-->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Binomial Problem
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Insert text here</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Solution
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Insert text here</div>
+                </div>
+              </div>
+            </div>
+            <h2 class="pt-5 pb-2">Now let's link this to Maclaurin Series</h2>
+            <p>
+              Maclaurin Series can be thought of simulating a curve by
+              finding<br />
+            </p>
+            <ol>
+              <li>How\(y\) at \( x=0 \) [The initial condition]</li>
+              <li>How \(y\) would change \(\frac{dy}{dx}\) [Gradient]</li>
+              <li>
+                How gradient would change
+                <span class="MathJax">\(\frac{d^2y}{dx^2}\)</span> [The change
+                of gradient]
+              </li>
+              <li>
+                How the gradient of the gradient would change
+                <span class="MathJax">\(\frac{d^3y}{dx^3}\)</span>
+              </li>
+              <li>And so on</li>
+            </ol>
+            <p>
+              A good visual representation is
+              <img
+                src="Articles/Taylor Series/Taylor Series Animated.gif"
+                class="hero_image py-5"
+              />
+              Which, in equation form is<br />
+            </p>
+            <div class="text-center">
+              Where
+              <span class="MathJax"
+                >\(f^{\left(n\right)}\left(x\right)=\frac{d^ny}{dx^n}\),</span
+              >
+            </div>
+            <p>
+              <span class="MathJax">
+                $$f(x)\ =\ f(0)\ +\
+                f'(0)x+\frac{f''(0)}{2!}x^2+\frac{f'''(0)}{3!}x^3+\frac{f^{(4)}(0)}{4!}x^4...\
+                $$</span
+              >
+            </p>
+            <div class="text-center">OR</div>
+            <p>
+              <span class="MathJax">
+                $$f(x)\ =\ \sum_{n=0}^{\infty}{\frac{f^{(n)}(x)}{n!}x^n}$$ </span
+              >And it gets more accurate the more the iterations (as seen in the
+              animation) <br /><br />
+              But don't take it from me. Let's show this result holds
+            </p>
+            <h3>Find the Maclaurin expansion of \({(1+x)}^n\)</h3>
+            <p>Let's use the framework we used before,</p>
+            <ol>
+              <li>At \(x = 0\), \(y=1\)</li>
+              <li>
+                <span class="MathJax">
+                  \(\frac{d}{dx}[{(1+x)}^n]=n(1+x)^{n-1} \) at \(x = 0\), \(\
+                  f'(0)=n\)</span
+                >
+              </li>
+              <li>
+                <span class="MathJax">
+                  $$\frac{d^2}{dx^2}\left[\left(1+x\right)^n\right]=n{\left(n-1\right)\left(1+x\right)}^{n-2}\)
+                  at \(x=0\), \(\ f''(0) = n\left(n-1\right)$$</span
+                >
+              </li>
+              <li>
+                If we were to continue, we would find that the equation looks
+                like
+                <span class="MathJax">
+                  $$\left(1+x\right)^n=1+nx+\frac{n\left(n-1\right)}{2!}x^2+\frac{n\left(n-1\right)\left(n-2\right)}{3!}x^3\ldots$$
+                </span>
+              </li>
+            </ol>
+            <p class="pb-2">
+              <!--This is here because the accordion might intrude on it-->
+              Looks familiar? That's because it is the Binomial Expansion of
+              \({1+x}^n\)<br />
+              I hope this has given an intuitive understanding of why Maclaurin
+              expansion is the way it is. <br /><br />Some other helpful
+              equations are
+              <span class="MathJax"
+                >$$\begin{aligned} \sin (x) & =x-\frac{x^3}{3 !}+\frac{x^5}{5
+                !}-\frac{x^7}{7 !}+\cdots \\ \cos (x) & =1-\frac{x^2}{2
+                !}+\frac{x^4}{4 !}-\frac{x^6}{6 !}+\cdots \\ \exp (x) &
+                =\frac{x^0}{0 !}+\frac{x^1}{1 !}+\frac{x^2}{2 !}+\frac{x^3}{3 !}
+                \cdots \\ \log (x+1) &
+                =x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\frac{x^5}{5}+\cdots
+                \end{aligned}$$</span
+              >
+            </p>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Maclaurin Problem
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Insert text here</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Solution
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Insert text here</div>
+                </div>
+              </div>
+            </div>
+            <h3 class="pt-5 pb-2">The Finale: Taylor Series</h3>
+            <p>
+              We are almost at the end! <br />Taylor Series is almost identical
+              to Maclaurin Expansion, except it is a more generalised form to be
+              able to "simulate" the equation at any point,<span
+                class="MathJax"
+              >
+                $$f(a)+\frac{f^{\prime}(a)}{1 !}(x-a)+\frac{f^{\prime
+                \prime}(a)}{2 !}(x-a)^2+\frac{f^{\prime \prime \prime}(a)}{3
+                !}(x-a)^3+\cdots=\sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n
+                !}(x-a)^n .$$</span
+              >
+            </p>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Taylor Series Stretch Activity
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We know Taylor Series is a simulation of the actual curve,
+                    but to know whether or not this simulation is accurate or
+                    not, we would need to know the accuracy of a equation.
+                    <br /><br />
+                    So do we know how to find the error of a equation?
+                    <br /><br />There is a formula to find the error involved,
+                    known as
+                    <a href="https://en.wikipedia.org/wiki/Taylor%27s_theorem"
+                      >Taylor's theorem</a
+                    >, which is states the MAXIMUM error (or formally known as
+                    the error) can be found by $$\frac{f^{(N+1)}(z)}{(N+1)
+                    !}(x-a)^{N+1}$$ Where z is the value that causes error to be
+                    largest between \( a\le\ z\le\ x\) <br /><br />
+                    Since the trigonometric functions (\(sin(x)\)) or
+                    (\(cos(x)\)) and exponential functions (\(e^x\)) can be
+                    differentiated 1 or 2 times to return the function, the
+                    error value would have a significant continuous decrease as
+                    the number of iterations increase.
+                    <br /><br />That also means that with infinite iterations,
+                    you can fully simulate a \(sin(x)\) / \(cos(x)\) / \(e^x\)
+                    curve
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Taylor's Theorem Problem
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Question: Find the MAXIMUM error for the equation
+                    <span class="MathJax"
+                      >$$ln(1.1)\ \approx\ 0.1\ -\
+                      \frac{{(0.1)}^2}{2}+\frac{{(0.1)}^3}{3}\ -\
+                      \frac{{(0.1)}^4}{4}$$</span
+                    >
+                    <br /><br /><br />
+                    Solution: We need to first simplify this expression into the
+                    ordinary Taylor Series formula. To assist in finding \(x,
+                    a\), we assume that \(x=1.1\)
+                    <strong>Which works for most Taylor Theorem problems</strong
+                    >. Hence, using powers of observation, we realise that the
+                    first term \((x-a)=0.1\ \), hence \(a=1\) <br />
+                    \(N=4\), as there are 4 terms, so we need to differentiate 4
+                    times <br /><br />The differentiating is trivial and left as
+                    a exercise to the reader, the answer should be
+                    \(\frac{24}{x^5}\). We should recognize \(z=1\) gives the
+                    largest error value, so we should use that.<br /><br />
+                    Combining all variables, we get <br /><br />
+                    ERROR<span class="MathJax">
+                      \(=\frac{\frac{24}{1^5}}{5!}\left(0.1\right)^5\approx0.095310\)</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="pt-5 pb-2">Conclusion</h3>
+            <p class="pb-5">
+              And there you have it! A brief exploration into the Taylor and
+              Maclaurin series, used to help you approximate equations, which is
+              very useful for higher-level physics. Hope you enjoyed it!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Put your code here!-->
+
+    <div class="container-fluid bg-footer">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer"
+      >
+        <p class="col-md-4 mb-0 text-white">2023 Bradley & Jerome</p>
+
+        <a
+          href="index.html"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <img src="images/FF logo.svg" width="40" />
+        </a>
+
+        <ul class="nav nav-pills col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a
+              href="https://drive.google.com/drive/folders/1TwZIK7r7kwgsq-YLXyR3qspmdyS8GxdL?usp=sharing"
+              class="nav-link px-2 text-secondary"
+              >Google Drive</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="articles.html" class="nav-link px-2 text-secondary"
+              >Articles</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="FAQ.html" class="nav-link px-2 text-secondary">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact_us.html" class="nav-link px-2 text-secondary"
+              >Contact us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="credit.html" class="nav-link px-2 text-secondary"
+              >Credits</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

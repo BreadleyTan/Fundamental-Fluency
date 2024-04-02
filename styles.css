@@ -305,3 +305,23 @@ iframe {
 .hugepad {
   padding: 70vh;
 }
+
+.creditation {
+  font-size: 1em;
+}
+
+.articlepic {
+  border-radius: 50%;
+  height: 2em;
+}
+
+.hero_image {
+  width: 100%;
+  height: 50vw;
+  object-fit: contain;
+  margin:auto;
+}
+
+.MathJax {
+  overflow-x: auto;
+}
