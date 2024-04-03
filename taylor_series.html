@@ -174,7 +174,9 @@
 
           <div class="px-5 m">
             <h2>Glossary</h2>
-            <span class="MathJax">$$Polynomial:y=ax^n+bx^{n-1}+cx^{n-2}$$</span>
+            <span class="MathJax"
+              ><br />Polynomial: \(y=ax^n+bx^{n-1}+cx^{n-2}\)</span
+            >
           </div>
           <div class="px-5">
             <h2 class="pt-5">Binomial</h2>
@@ -224,7 +226,12 @@
                   class="accordion-collapse collapse show"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">Insert text here</div>
+                  <div class="accordion-body">
+                    Using the appropriate standard series (from the Formula List
+                    MF27), obtain the first four non-zero terms of the expansion
+                    \(\ln (1-2 x)^{\cos 2 x}\) in ascending powers of x and
+                    state the range of values for the expansion to be valid.
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -245,7 +252,16 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">Insert text here</div>
+                  <div class="accordion-body">
+                    $$\begin{aligned} \ln (1-2 x)^{\cos 2 x} & =(\cos 2 x) \ln
+                    (1-2 x) \\ & =\left[1-\frac{(2 x)^2}{2 !}+\frac{(2 x)^4}{4
+                    !}+\ldots\right]\left[(-2 x)-\frac{(-2 x)^2}{2}+\frac{(-2
+                    x)^3}{3}-\frac{(-2 x)^4}{4}+\frac{(-2 x)^5}{5}+\ldots\right]
+                    \\ & =\left(1-2 x^2+\frac{2}{3} x^4 . . .\right)\left(-2 x-2
+                    x^2-\frac{8}{3} x^3-4 x^4-\frac{32}{5} x^5 \ldots\right) \\
+                    & =-2 x-2 x^2+\frac{4}{3} x^3-\frac{12}{5} x^5 \ldots .,
+                    \quad-\frac{1}{2} \leq x<\frac{1}{2}\end{aligned}$$
+                  </div>
                 </div>
               </div>
             </div>
@@ -255,7 +271,7 @@
               finding<br />
             </p>
             <ol>
-              <li>How\(y\) at \( x=0 \) [The initial condition]</li>
+              <li>How \(y\) at \( x=0 \) [The initial condition]</li>
               <li>How \(y\) would change \(\frac{dy}{dx}\) [Gradient]</li>
               <li>
                 How gradient would change
@@ -266,7 +282,7 @@
                 How the gradient of the gradient would change
                 <span class="MathJax">\(\frac{d^3y}{dx^3}\)</span>
               </li>
-              <li>And so on</li>
+              <li>And so on...</li>
             </ol>
             <p>
               A good visual representation is
@@ -295,7 +311,7 @@
                 $$f(x)\ =\ \sum_{n=0}^{\infty}{\frac{f^{(n)}(x)}{n!}x^n}$$ </span
               >And it gets more accurate the more the iterations (as seen in the
               animation) <br /><br />
-              But don't take it from me. Let's show this result holds
+              But don't take it from me. Let's show this result holds.
             </p>
             <h3>Find the Maclaurin expansion of \({(1+x)}^n\)</h3>
             <p>Let's use the framework we used before,</p>
@@ -309,9 +325,10 @@
               </li>
               <li>
                 <span class="MathJax">
-                  $$\frac{d^2}{dx^2}\left[\left(1+x\right)^n\right]=n{\left(n-1\right)\left(1+x\right)}^{n-2}\)
-                  at \(x=0\), \(\ f''(0) = n\left(n-1\right)$$</span
+                  $$\frac{d^2}{dx^2}\left[\left(1+x\right)^n\right]=n{\left(n-1\right)\left(1+x\right)}^{n-2}$$</span
                 >
+                <p class="centre">at x = 0,</p>
+                <span class="MathJax"> $$\ f''(0) = n\left(n-1\right)$$</span>
               </li>
               <li>
                 If we were to continue, we would find that the equation looks
@@ -321,7 +338,7 @@
                 </span>
               </li>
             </ol>
-            <p class="pb-2">
+            <p class="pb-2 pt-4">
               <!--This is here because the accordion might intrude on it-->
               Looks familiar? That's because it is the Binomial Expansion of
               \({1+x}^n\)<br />
@@ -357,7 +374,12 @@
                   class="accordion-collapse collapse show"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">Insert text here</div>
+                  <div class="accordion-body">
+                    Given that \(\mathrm{f}(x)=\tan \left(2 x+\frac{1}{4}
+                    \pi\right)\), find \(\mathrm{f}(0), \mathrm{f}^{\prime}(0)\)
+                    and \(\mathrm{f}^{\prime \prime}(0)\). Hence find the first
+                    3 terms in the Maclaurin series of \(\mathrm{f}(x)\).
+                  </div>
                 </div>
               </div>
               <div class="accordion-item">
@@ -378,7 +400,21 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">Insert text here</div>
+                  <div class="accordion-body">
+                    $$\begin{aligned} & \mathrm{f}(x)=\tan \left(2
+                    x+\frac{\pi}{4}\right) \\ & \mathrm{f}^{\prime}(x)=2 \sec
+                    ^2\left(2 x+\frac{\pi}{4}\right) \\ & \mathrm{f}^{\prime
+                    \prime}(x)=4 \sec \left(2 x+\frac{\pi}{4}\right)\left[2 \tan
+                    \left(2 x+\frac{\pi}{4}\right) \sec \left(2
+                    x+\frac{\pi}{4}\right)\right]=8 \tan \left(2
+                    x+\frac{\pi}{4}\right) \sec ^2\left(2 x+\frac{\pi}{4}\right)
+                    \\ & \mathrm{f}(0)=1, \mathrm{f}^{\prime}(0)=4,
+                    \mathrm{f}^{\prime \prime}(0)=16 \\ &
+                    \mathrm{f}(x)=\mathrm{f}(0)+\mathrm{f}^{\prime}(0)
+                    x+\frac{\mathrm{f}^{\prime \prime}(0)}{2 !} x^2+\ldots \\ &
+                    \mathrm{f}(x)=1+4 x+\frac{16}{2 !} x^2+\ldots
+                    \end{aligned}$$
+                  </div>
                 </div>
               </div>
             </div>
@@ -424,8 +460,8 @@
                     known as
                     <a href="https://en.wikipedia.org/wiki/Taylor%27s_theorem"
                       >Taylor's theorem</a
-                    >, which is states the MAXIMUM error (or formally known as
-                    the error) can be found by $$\frac{f^{(N+1)}(z)}{(N+1)
+                    >, which states the MAXIMUM error (or formally known as the
+                    error) can be found by $$\frac{f^{(N+1)}(z)}{(N+1)
                     !}(x-a)^{N+1}$$ Where z is the value that causes error to be
                     largest between \( a\le\ z\le\ x\) <br /><br />
                     Since the trigonometric functions (\(sin(x)\)) or
@@ -473,7 +509,7 @@
                     first term \((x-a)=0.1\ \), hence \(a=1\) <br />
                     \(N=4\), as there are 4 terms, so we need to differentiate 4
                     times <br /><br />The differentiating is trivial and left as
-                    a exercise to the reader, the answer should be
+                    an exercise to the reader, the answer should be
                     \(\frac{24}{x^5}\). We should recognize \(z=1\) gives the
                     largest error value, so we should use that.<br /><br />
                     Combining all variables, we get <br /><br />
